@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(135deg,#0f2027, #203a43);
+    height: 100vh;
+}
+.card{
+    height: 500px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.18);
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    margin: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.image-box{
+    height: 250px;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    transition: 0.4s;
+}
+.badge{
+    position: absolute;
+    margin: 15px;
+    background-color: rgb(2, 212, 2);
+    color: white;
+    padding: 4px 13px;
+    border-radius: 15px;
+    font-size: 13px;
+    z-index: 2;
+}
+.content{
+    color: white;
+}
+.content h2{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.rating{
+    margin: 15px;
+    color: rgb(207, 207, 21);
+}
+.rating span{
+    color: gray;
+}
+
+p{
+    margin-left: 15px;
+    margin-bottom: 30px;
+    color: gray;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom h2{
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+}
+
+button{
+    margin-right: 25px;
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(13, 136, 243);
+    border: none;
+    font-size: 15px;
+    border-radius: 18px;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+img:hover{
+    transform: scale(1.1);
+}
+button:hover{
+    background-color: blue;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    gap: 20px;
+    justify-content: space-evenly;
+}
